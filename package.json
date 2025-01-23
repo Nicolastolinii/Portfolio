@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "vercel-install": "npm install --force",
+    "install:force": "npm install --force",
+    "build": "npm run install:force && your_build_command",
     "lint": "eslint .",
     "preview": "vite preview"
   },
