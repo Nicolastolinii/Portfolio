@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install $NPM_FLAGS && next build",
-    "lint": "eslint .",
+    "install": "npm install --legacy-peer-deps",
+    "build": "next build",
     "preview": "vite preview"
   },
   "dependencies": {
