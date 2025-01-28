@@ -2,8 +2,7 @@ import { useState } from "react";
 import AboutMeIcon from "../icon/AboutMeIcon"
 import TitleSection from "./TitleSection"
 import projectData from "../service/data.json"
-import { Description } from "@radix-ui/react-dialog";
-import { a } from "framer-motion/client";
+
 
 
 export const AboutMe = () => {
@@ -35,10 +34,10 @@ export const AboutMe = () => {
             label: "2+ años de experiencia desarrollando soluciones tecnológicas a través de proyectos personales y como freelancer. He trabajado en la creación de aplicaciones web y sistemas Full Stack, utilizando tecnologías como Java, Python, Spring Boot, React, y MySQL. Mi enfoque incluye el diseño de arquitecturas escalables y la entrega de proyectos de alta calidad.",
         }, {
             title: "Educación",
-            label: "Estudiante de Telecomunicaciones: Universidad Tecnológica Nacional (UTN)<br/> Programacion Autodidacta ♥: Java, JavaScript, Python, MySQL ",
+            label: "Estudiante de Telecomunicaciones: Universidad Tecnológica Nacional (UTN)<br/> Programación Autodidacta ♥: Java, JavaScript, Python, MySQL ",
         },
     ];
-    const [selectedLabel, setselectLabel] = useState("")
+    const [selectedLabel, setselectLabel] = useState(items[0].label)
     return (
         <div className="flex flex-col justify-center items-center container tracking-wide">
             <TitleSection className={"  text-4xl"}>
@@ -71,9 +70,9 @@ export const AboutMe = () => {
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
-                            strokeLinecap="round"
+                            strokeLinecap="round" 
                             strokeLinejoin="round"
-                            className="lucide-icon lucide lucide-cpu  text-white"
+                            className="lucide-icon lucide lucide-cpu text-white"
                         >
                             <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
                             <rect x="9" y="9" width="6" height="6"></rect>
@@ -86,6 +85,7 @@ export const AboutMe = () => {
                             <line x1="1" y1="9" x2="4" y2="9"></line>
                             <line x1="1" y1="14" x2="4" y2="14"></line>
                         </svg>
+
 
                         Tecnologías</h4>
                     <div className="flex flex-wrap gap-1.5">
@@ -100,7 +100,7 @@ export const AboutMe = () => {
                 </div>
                 <div className=" p-6  w-full  flex flex-col gap-4   border text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md bg-gray-800">
                     <h4 className="text-xl font-medium flex gap-2 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide-icon lucide lucide-star">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
                         Proyectos Destacados</h4>

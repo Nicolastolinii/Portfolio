@@ -11,6 +11,12 @@ import { useState } from "react"
 
 export const Projects = () => {
   const skills = Array.from(new Set(projectData.flatMap(project => project.tags.map(tag => tag.name))));
+  const skillCounts = skills.reduce((acc, skill) => {
+    acc[skill] = projectData.filter((project) =>
+      project.tags.some((tag) => tag.name === skill)
+    ).length;
+    return acc;
+  }, {});
   const [selectedSkill, setSelectedSkill] = useState(null); // Skill seleccionada
   const { scrollYProgress } = useScroll()
   const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1])
@@ -55,17 +61,30 @@ export const Projects = () => {
       transition={{ duration: 0.6, delay: 0.1 }}
       className="pb-16  w-full   flex flex-col justify-center items-center">
       <TitleSection className={"  text-4xl"}>
-        <ProjectsIcon   className="size-9" />
+        <ProjectsIcon className="size-9" />
         Proyectos
       </TitleSection>
       <div className="py-8 flex gap-2">
+        <button
+          onClick={() => handleSkillClick(null)}
+          className={`${selectedSkill === null
+            ? "dark:bg-gray-100"
+            : "dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
+            } flex items-center justify-center gap-1 px-4 py-1.5 transition   rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black font-medium`}
+        >
+          All
+        </button>
         {
           skills.map((skill, index) => (
-            <LinkButton
-             key={index}
-             onClick={() => handleSkillClick(skill)}
-             focus={selectedSkill === skill ? true : false}
-             >{skill}</LinkButton>
+            <button
+              key={index}
+              onClick={() => handleSkillClick(skill)}
+
+              className={`${selectedSkill === skill
+                ? "dark:bg-gray-100"
+                : "dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
+                } flex items-center justify-center gap-1 px-4 py-1.5 transition   rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black font-medium`}
+            >{skill}<span className="text-xs items-center opacity-70">({skillCounts[skill]})</span></button>
           ))
         }
       </div>

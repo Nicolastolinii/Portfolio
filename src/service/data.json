@@ -114,10 +114,6 @@
                 "icon": "Python"
             },
             {
-                "name": "Html",
-                "icon": "Html"
-            },
-            {
                 "name": "Docker",
                 "icon": "Docker"
             }

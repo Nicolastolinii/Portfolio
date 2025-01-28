@@ -1,4 +1,5 @@
 import { AboutMe } from "./component/AboutMe"
+import Footer from "./component/Footer"
 import { Hero } from "./component/Hero"
 import { Navbar } from "./component/Navbar"
 import { Projects } from "./component/Projects"
@@ -26,6 +27,9 @@ function App() {
       </Section>
       <Section id={"sobre-mi"} className={"space-y-24 py-16"}>
         <AboutMe />
+      </Section>
+      <Section  className={"space-y-24 pt-16"}>
+        <Footer/>
       </Section>
 
     </main>
