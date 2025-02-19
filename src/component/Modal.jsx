@@ -10,14 +10,14 @@ export const Modal = ({ selectedProject, closeModal }) => {
     return (
         <section>
             <motion.div
-                className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[100]"
+                className="fixed inset-0 bg-black bg-opacity-80 dark:opacity-50 flex items-center justify-center p-4 z-[100]"
                 initial={{ opacity: 0 }} // Inicializa el fondo con opacidad 0
                 animate={{ opacity: 1 }} // Aumenta la opacidad del fondo de manera suave
                 exit={{ opacity: 0 }} // Al salir, el fondo desaparece
                 transition={{ duration: 0.8, ease: "easeOut" }} // Suaviza la aparición del fondo
             >
                 <motion.div
-                    className="dark:bg-[rgb(31,41,55)] dark:text-white rounded-xl max-w-4xl w-full max-h-[70vh] h-full overflow-y-auto shadow-md "
+                    className="dark:bg-[rgb(31,41,55)] bg-[#f5f9fc] dark:text-white text-black rounded-xl max-w-4xl w-full max-h-[70vh] h-full overflow-y-auto shadow-md "
                     initial={{ y: 30, opacity: 0 }} // Inicializa el modal fuera de vista y con opacidad 0
                     animate={{ y: 0, opacity: 1 }}  // El modal se mueve a su lugar y se vuelve visible
                     exit={{ y: 30, opacity: 0 }}   // Desaparece el modal moviéndose hacia abajo
@@ -43,7 +43,7 @@ export const Modal = ({ selectedProject, closeModal }) => {
                             {selectedProject.modalInfo.funcionalidad.map((tag, index) => {
                                 const [label, description] = tag.split(':');
                                 return (
-                                    <div key={index} className=" py-1.5 text-sm flex w-full items-center  rounded-full  text-white  ">
+                                    <div key={index} className="dark:text-white text-black py-1.5 text-sm flex w-full items-center  rounded-full    ">
                                         <div className='bg-slate-600 rounded-full'>
                                             <ArrowIcon />
                                         </div>

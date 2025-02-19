@@ -59,7 +59,7 @@ export const Projects = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1 }}
-      className="pb-16  w-full   flex flex-col justify-center items-center">
+      className="pb-16  w-full   flex flex-col justify-center items-center text-black">
       <TitleSection className={"  text-4xl"}>
         <ProjectsIcon className="size-9" />
         Proyectos
@@ -68,9 +68,9 @@ export const Projects = () => {
         <button
           onClick={() => handleSkillClick(null)}
           className={`${selectedSkill === null
-            ? "dark:bg-gray-100"
-            : "dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
-            } flex items-center justify-center gap-1 px-4 py-1.5 transition   rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black font-medium`}
+            ? "dark:bg-gray-100 bg-[#8291a1]"
+            : "dark:bg-gray-800 bg-[#F5F5F5] dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
+            } flex items-center justify-center gap-1 px-4 py-1.5 transition   rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 font-medium`}
         >
           All
         </button>
@@ -81,9 +81,9 @@ export const Projects = () => {
               onClick={() => handleSkillClick(skill)}
 
               className={`${selectedSkill === skill
-                ? "dark:bg-gray-100"
-                : "dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
-                } flex items-center justify-center gap-1 px-4 py-1.5 transition   rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black font-medium`}
+                ? "dark:bg-gray-100 bg-[#8291a1]"
+                : "dark:bg-gray-800 bg-[#F5F5F5] dark:hover:bg-gray-700 hover:bg-opacity-100  border  dark:text-white  "
+                } flex items-center justify-center gap-1 px-4 py-1.5 transition shadow-sm  rounded-lg dark:border-gray-600 text-md  group focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2  font-medium`}
             >{skill}<span className="text-xs items-center opacity-70">({skillCounts[skill]})</span></button>
           ))
         }
@@ -104,7 +104,7 @@ export const Projects = () => {
         <button
           onClick={() => goToPage(currentPage - 1)}
           disabled={currentPage === 1}
-          className="h-9 w-9 text-xl font-medium text-center   text-white rounded-xl flex justify-center items-center disabled:opacity-50"
+          className="h-9 w-9 text-xl font-medium text-center  text-black dark:text-white rounded-xl flex justify-center items-center disabled:opacity-50"
         >
           {"<"}
         </button>
@@ -112,10 +112,10 @@ export const Projects = () => {
           <button
             key={index}
             onClick={() => goToPage(index + 1)}
-            className={`w-9 h-9 text-white text-xs ${currentPage === index + 1
-              ? "border-gray-500 border border-opacity-50 "
+            className={`w-9 h-9 text-black dark:text-white opacity-50 text-xs ${currentPage === index + 1
+              ? "border-gray-500 border border-opacity-50 opacity-100 "
               : ""
-              } rounded-xl`}
+              } rounded-xl hover:opacity-100 `}
           >
             {index + 1}
           </button>
@@ -123,7 +123,7 @@ export const Projects = () => {
         <button
           onClick={() => goToPage(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="h-9 w-9 text-lg text-white font-medium text-center rounded-xl flex justify-center items-center disabled:opacity-50"
+          className="h-9 w-9 text-lg text-black dark:text-white font-medium text-center rounded-xl flex justify-center items-center disabled:opacity-50"
         >
           {'>'}
         </button>

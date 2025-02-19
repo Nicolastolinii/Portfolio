@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="container mt-8 tracking-wide flex text-sm text-white  h-14 w-full pl-10  justify-between items-center ">
+        <footer className="container mt-8 tracking-wide flex text-sm dark:text-white  h-14 w-full pl-10  justify-between items-center ">
             <span>&copy; Todos los derechos reservados.</span>
             <div>
                 <span> Nicolás Tolini</span>

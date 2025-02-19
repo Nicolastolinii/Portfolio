@@ -25,7 +25,7 @@ export const Card = ({ props, className, onClick }) => {
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`relative max-w-[25rem] w-[25rem] border text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md bg-gray-800 hover:shadow-lg ease-in-out ${className} cursor-pointer`}
+            className={`relative max-w-[25rem] w-[25rem] border text-black dark:text-gray-300 dark:border-[#4a5568] dark:hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md bg-[#f5f9fc] dark:bg-gray-800 hover:shadow-lg ease-in-out ${className} cursor-pointer`}
         >
             {/* Fondo con efecto de luz */}
             {isHovered && (
@@ -40,7 +40,7 @@ export const Card = ({ props, className, onClick }) => {
             {/* Contenido de la card */}
             <div className="px-6 py-4">
                 <h3 className="font-bold text-xl mb-2 tracking-wide">{props.title}</h3>
-                <p className="text-gray-300 text-base">
+                <p className=" text-base">
                     {props.text.length > 50 ? `${props.text.substring(0, 50)} ...` : props.text}
                 </p>
             </div>

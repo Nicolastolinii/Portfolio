@@ -44,12 +44,12 @@
                 "Java", "Spring Boot", "Spring Security","Spring Data JPA","Hibernate","JavaMail", "JWT", "MySQL"
             ],
             "funcionalidad": [
-                "Registro de Usuario: Permite a los usuarios registrarse y recibir un OTP para validar su cuenta.",
-                "Autenticación y Autorización: Utiliza JWT para gestionar sesiones de usuario.",
-                "Gestión de Blogs: Los usuarios pueden crear, actualizar y eliminar sus publicaciones de blog.",
-                "Gestión de Imágenes: Permite a los usuarios subir imágenes de perfil.",
-                "Limpieza de Datos: Servicio programado que elimina las vistas de IP obsoletas.",
-                "Limitación de Tasa: Implementación de un filtro que limita el número de solicitudes por dirección IP."
+                "Registro de usuario: Permite a los usuarios registrarse y recibir un OTP para validar su cuenta.",
+                "Autenticación y autorización: Utiliza JWT para gestionar sesiones de usuario.",
+                "Gestión de blogs: Los usuarios pueden crear, actualizar y eliminar sus publicaciones de blog.",
+                "Gestión de imágenes: Permite a los usuarios subir imágenes de perfil.",
+                "Limpieza de datos: Servicio programado que elimina las vistas de IP obsoletas.",
+                "Limitación de tasa: Implementación de un filtro que limita el número de solicitudes por dirección IP."
             ]
         }
     },

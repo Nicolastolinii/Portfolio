@@ -7,15 +7,9 @@ import Section from "./component/Section"
 
 function App() {
 
-  // Color de acento oscuro: #1e2a33 (Azul oscuro casi negro para títulos y bordes)
-  // Color de texto: #333333 (Gris oscuro, para que no sea tan duro como el negro)
-
-
-
-
   return (
     <main className="font-onest ">
-      <div class="fixed top-0 z-[-2] h-screen w-screen bg-[#1e2a33] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <div class="fixed top-0 z-[-2] h-screen w-screen bg-[#ffffff] dark:bg-[#1e2a33] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] bg-[radial-gradient(100%_80%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
 
 
       <Section id={"inicio"} className={"h-screen  flex flex-col items-center"}>
