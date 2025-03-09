@@ -37,14 +37,32 @@ export const Card = ({ props, className, onClick }) => {
                 />
             )}
 
-            {/* Contenido de la card */}
-            <div className="px-6 py-4">
-                <h3 className="font-bold text-xl mb-2 tracking-wide">{props.title}</h3>
+            <div className="px-6 py-4 group">
+                <div className="flex items-center transition-all duration-150 ">
+                    <h3 className="font-bold text-xl mb-2 tracking-wide text-center pr-2 ">{props.title}</h3>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide-icon lucide lucide-arrow-up-right opacity-50 scale-100 duration-200 transform group-hover:opacity-100 group-hover:scale-125 group-hover:translate-x-[1.5px]"
+                    >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                    </svg>
+                </div>
                 <p className=" text-base">
                     {props.text.length > 50 ? `${props.text.substring(0, 50)} ...` : props.text}
                 </p>
+
             </div>
             <div className="px-6 pb-1">
+            {/* Contenido de la card */}
                 <div className="flex flex-wrap gap-2 mb-4">
                     {props.tags.map((tag, index) => (
                         <Tags key={index} name={tag.name} className={tag.class} />
