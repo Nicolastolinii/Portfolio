@@ -17,7 +17,18 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/Gestion-Tickets",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este proyecto es una API REST desarrollada con Java y Spring Boot que permite gestionar eventos y tickets. Los usuarios pueden realizar acciones como crear, actualizar, eliminar y consultar eventos, así como administrar tickets para los eventos. Incluye validación de tickets y manejo de excepciones personalizadas.",
+            "tecnologias_usadas": ["Java", "Spring Boot", "Spring Security","Spring Data JPA","Hibernate","MySQL","MapStruct"],
+            "funcionalidad": [
+                "Registro de usuario: Permite registrar nuevos usuarios en la plataforma con validación de datos para garantizar la integridad de la información.",
+                "Autenticación y autorización: Utiliza JWT para gestionar sesiones de usuario.",
+                "Gestion de ticket: Los usuarios pueden comprar, validar y eliminar tickets.",
+                "Gestion de eventos: Los admin pueden crear, actualizar, controlar estado y eliminar eventos.",
+                "Roles y seguridad: endpoint con autorizacion segun rol,permisos específicos segun nivel de acceso."
+            ]
+        }
     },
     {
         "title": "Tecnosapiens-Back",
@@ -67,7 +78,40 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/Tecnosapiens-Front",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este es un proyecto de blog desarrollado en React que permite a los usuarios crear, leer, filtrar y buscar publicaciones. Además, cuenta con un sistema de registro de usuarios que incluye verificación de cuentas. Los usuarios pueden crear publicaciones y navegar a través de ellas de manera intuitiva.",
+            "tecnologias_usadas": ["React","React Router","Tailwind","Axios","JWT"],
+            "funcionalidad": [
+                "Registro de usuario: Los usuarios pueden registrarse proporcionando su nombre de usuario, correo electrónico y contraseña. Se valida el formato del correo y la contraseña.",
+                "Verificación de cuenta: Los usuarios reciben un enlace de verificación por correo electrónico que les permite activar su cuenta.",
+                "Creación de publicaciones: Una vez verificados, los usuarios pueden crear publicaciones en el blog.",
+                "Visualización de publicaciones: Los usuarios pueden ver todas las publicaciones creadas, con opciones para filtrar y buscar contenido específico.",
+                "Interfaz intuitiva: Utilizando Tailwind CSS, la aplicación tiene un diseño moderno y receptivo."
+            ]
+        }
+    },
+    {
+        "title": "UserNetSearcher",
+        "text": "UserNetSearcher es una herramienta de búsqueda de nombres de usuario que permite verificar la disponibilidad de un nombre en múltiples redes sociales. Utiliza conexiones asíncronas para hacer consultas simultáneas, lo que mejora la eficiencia en la recolección de datos sobre el usuario especificado.",
+        "tags": [
+            {
+                "name": "Python",
+                "icon": "Python"
+            }
+        ],
+        "url": "https://github.com/Nicolastolinii/UserNetSearcher",
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "UserNetSearcher es una herramienta de búsqueda de nombres de usuario que permite verificar la disponibilidad de un nombre en múltiples redes sociales. Utiliza conexiones asíncronas para hacer consultas simultáneas, lo que mejora la eficiencia en la recolección de datos sobre el usuario especificado.",
+            "tecnologias_usadas": ["Python"],
+            "funcionalidad": [
+                "Consulta múltiples redes sociales en una sola ejecución.",
+                "Uso de peticiones asíncronas para optimizar el tiempo de respuesta.",
+                "Manejo de errores para situaciones comunes (usuario no encontrado, errores de conexión, etc.).",
+                "Salida colorida y formateada en la consola para una mejor legibilidad."
+            ]
+        }
     },
     {
         "title": "BotDiscord-Py",
@@ -79,31 +123,18 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/BotDiscord-Py",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
-    },
-    {
-        "title": "CalcUniverse",
-        "text": "Calculadora para caida libre de un objeto y fuerzas concurrentes.",
-        "tags": [
-            {
-                "name": "Python",
-                "icon": "Python"
-            }
-        ],
-        "url": "https://github.com/Nicolastolinii/CalcUniverse",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
-    },
-    {
-        "title": "Chat-SV-CL",
-        "text": "Este repositorio contiene un servidor y cliente de chat implementados en C utilizando sockets. El servidor es capaz de manejar múltiples clientes y distribuir mensajes entre ellos.",
-        "tags": [
-            {
-                "name": "C",
-                "icon": "C"
-            }
-        ],
-        "url": "https://github.com/Nicolastolinii/Chat-SV-CL",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este es un bot simple de Discord diseñado para reproducir música en canales de voz. El bot está construido utilizando Discord.py e incluye varios comandos relacionados con la música.",
+            "tecnologias_usadas": ["Python","FFmpeg"],
+            "funcionalidad": [
+                "Reproducir musica en canales de voz",
+                "Controlar volumen",
+                "Pausar y reanudar la reproducción",
+                "Desconectarse del canal",
+                "Mostrar informacion del usuario"
+            ]
+        }
     },
     {
         "title": "Img_to_Text",
@@ -119,7 +150,56 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/Img_to_Text",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este proyecto es un programa en Python que convierte archivos PDF compuestos por imágenes o imágenes individuales en un PDF con texto plano.",
+            "tecnologias_usadas": ["Python","TesseractOCR","Poppler"],
+            "funcionalidad": [
+                "Convierte PDFs compuestos por imágenes en un PDF con texto plano.",
+                "Permite convertir imágenes individuales en un PDF con texto."
+
+            ]
+        }
+    },
+    {
+        "title": "CalcUniverse",
+        "text": "Calculadora para caida libre de un objeto y fuerzas concurrentes.",
+        "tags": [
+            {
+                "name": "Python",
+                "icon": "Python"
+            }
+        ],
+        "url": "https://github.com/Nicolastolinii/CalcUniverse",
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Calculadora para caida libre de un objeto y fuerzas concurrentes, Para aplicar en fisica.",
+            "tecnologias_usadas": ["Python"],
+            "funcionalidad": [
+                "Calcular caida libre de un objeto",
+                "Calcular fuerzas concurrentes"
+            ]
+        }
+    },
+    {
+        "title": "Chat-SV-CL",
+        "text": "Este repositorio contiene un servidor y cliente de chat implementados en C utilizando sockets. El servidor es capaz de manejar múltiples clientes y distribuir mensajes entre ellos.",
+        "tags": [
+            {
+                "name": "C",
+                "icon": "C"
+            }
+        ],
+        "url": "https://github.com/Nicolastolinii/Chat-SV-CL",
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este repositorio contiene un servidor y cliente de chat implementados en C utilizando sockets. El servidor es capaz de manejar múltiples clientes y distribuir mensajes entre ellos.",
+            "tecnologias_usadas": ["C"],
+            "funcionalidad": [
+                "Multiples clientes simultáneamente",
+                "El cliente puede enviar mensajes al servidor y recibir mensajes de otros clientes."
+            ]
+        }
     },
     {
         "title": "List-Directories",
@@ -131,7 +211,14 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/List-Directories",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Este sencillo programa en C te permite listar el contenido de un directorio, incluyendo subdirectorios y categorizando archivos según sus extensiones.",
+            "tecnologias_usadas": ["C"],
+            "funcionalidad": [
+                "Listar contenido de un directorio,recursivamente."
+            ]
+        }
     },
     {
         "title": "Netflix-Clone",
@@ -151,7 +238,19 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/Netflix-Clone",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Clon de Netflix con login y registro incluido usando firebase y aplicando a su maximo explendor el diseño de Netflix",
+            "tecnologias_usadas": ["React","Tailwind","Firebase"],
+            "funcionalidad": [
+                "Gestion de sesión",
+                "Catálogo de películas y series",
+                "Búsqueda de contenido",
+                "Lista 'Mi Lista'",
+                "Animaciones y transiciones"
+
+            ]
+        }
     },
     {
         "title": "PDFimg-front",
@@ -167,7 +266,16 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/PDFimg-front",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Web complementaria del proyecto Img_to_Text para utilizarlo de una manera mas sencilla con una interfaz intuitiva.",
+            "tecnologias_usadas": ["React","Tailwind"],
+            "funcionalidad": [
+                "Drag and Drop: Permite a los usuarios arrastrar y soltar archivos PDF o imágenes para su procesamiento.",
+                "Integración con API: Conecta con una API backend para procesar los archivos y extraer texto.",
+                "Validación de archivos: Verifica que los archivos cargados sean del formato correcto (PDF o imágenes)."
+            ]
+        }
     },
     {
         "title": "To-Do-List-App",
@@ -179,7 +287,18 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/To-Do-List-App",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "To Do List. app hecha en c++ con interfaz grafica facil de usar.",
+            "tecnologias_usadas": ["C++"],
+            "funcionalidad": [
+                "Agregar nuevas tareas.",
+                "Marcar tareas como completadas.",
+                "Editar el texto de las tareas existentes.",
+                "Eliminar tareas."
+
+            ]
+        }
     },
     {
         "title": "User-Search-Ig",
@@ -191,18 +310,15 @@
             }
         ],
         "url": "https://github.com/Nicolastolinii/User-Search-Ig",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
-    },
-    {
-        "title": "UserNetSearcher",
-        "text": "UserNetSearcher es una herramienta de búsqueda de nombres de usuario que permite verificar la disponibilidad de un nombre en múltiples redes sociales. Utiliza conexiones asíncronas para hacer consultas simultáneas, lo que mejora la eficiencia en la recolección de datos sobre el usuario especificado.",
-        "tags": [
-            {
-                "name": "Python",
-                "icon": "Python"
-            }
-        ],
-        "url": "https://github.com/Nicolastolinii/UserNetSearcher",
-        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4"
+        "svg": "https://avatars.githubusercontent.com/u/135293320?v=4",
+        "modalInfo": {
+            "descripcion": "Aplicacion para buscar posibles Users de instagram mediante un nombre y asi poder aplicar multiples propositos",
+            "tecnologias_usadas": ["Python"],
+            "funcionalidad": [
+                "Búsqueda de usuarios: Permite buscar posibles nombres de usuario en Instagram basándose en un nombre proporcionado.",
+                "Generación de combinaciones: Crea combinaciones de nombres de usuario utilizando el nombre ingresado y variaciones comunes.",
+                "Verificación de disponibilidad: Verifica si los nombres de usuario generados están disponibles en Instagram."
+            ]
+        }
     }
 ]

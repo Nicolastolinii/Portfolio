@@ -44,7 +44,7 @@ export const AboutMe = () => {
                 <AboutMeIcon strokeWidth={2.5} className="size-8" />
                 Sobre mí
             </TitleSection>
-            <div className="mt-8  w-full flex justify-between items-center rounded-lg dark:bg-gray-800 text-lg border border-[#4a5568] dark:text-white bg-[#f5f9fc]">
+            <div className="mt-8  w-full flex justify-between items-center rounded-lg dark:bg-gray-800 sm:text-lg text-sm  border border-[#4a5568] dark:text-white bg-[#f5f9fc]">
                 {items.map((title, index) => (
                     <button onClick={() => setselectLabel(title)} key={index} className={`py-1 w-full h-full flex items-center justify-center rounded-lg transition-colors duration-200   ${selectedLabel.title === title.title
                         ? "dark:bg-white text-black bg-[#ffffff]"
@@ -53,14 +53,14 @@ export const AboutMe = () => {
                         {title.title}</button>
                 ))}
             </div>
-            <div className=" mt-5  w-full  h-32  p-6 flex items-center justify-center  border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc] tracking-wider">
+            <div className=" mt-5  w-full  min-h-32  sm:p-6 p-4 flex items-center justify-center  border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc] tracking-wider">
                 <span className="">
                     {selectedLabel.label}
                 </span>
             </div>
-            <div className="flex justify-center gap-5 w-full h-52 mt-5">
-                <div className=" p-6  w-full  flex flex-col gap-4   border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc]">
-                    <h4 className="text-xl font-medium flex gap-2 items-center">
+            <div className="flex sm:flex-row flex-col justify-center gap-5 w-full min-h-52 mt-5">
+                <div className=" sm:p-6 p-4  w-full  flex flex-col gap-4   border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc]">
+                    <h4 className="sm:text-xl text-lg font-medium flex gap-2 items-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -97,8 +97,8 @@ export const AboutMe = () => {
                         }
                     </div>
                 </div>
-                <div className=" p-6  w-full  flex flex-col gap-4   border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc]">
-                    <h4 className="text-xl font-medium flex gap-2 items-center">
+                <div className=" sm:p-6 p-4  w-full  flex flex-col gap-4   border dark:text-white border-[#4a5568] hover:border-[#5f7889] transition-colors duration-200 rounded-xl overflow-hidden shadow-md dark:bg-gray-800 bg-[#f5f9fc]">
+                    <h4 className="sm:text-xl text-lg font-medium flex gap-2 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide-icon lucide lucide-star">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>

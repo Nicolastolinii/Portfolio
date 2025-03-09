@@ -21,7 +21,7 @@ export const Card = ({ props, className, onClick }) => {
     const handleMouseLeave = () => setIsHovered(false);
     return (
         <div
-            onClick={onClick}
+            
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -37,7 +37,9 @@ export const Card = ({ props, className, onClick }) => {
                 />
             )}
 
-            <div className="px-6 py-4 group">
+            <div className="px-6 py-4 group"
+            onClick={onClick}
+            >
                 <div className="flex items-center transition-all duration-150 ">
                     <h3 className="font-bold text-xl mb-2 tracking-wide text-center pr-2 ">{props.title}</h3>
                     <svg
@@ -50,7 +52,7 @@ export const Card = ({ props, className, onClick }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide-icon lucide lucide-arrow-up-right opacity-50 scale-100 duration-200 transform group-hover:opacity-100 group-hover:scale-125 group-hover:translate-x-[1.5px]"
+                        className="lucide-icon lucide lucide-arrow-up-right opacity-50 scale-100 duration-200 transform group-hover:opacity-100 group-hover:scale-125 group-hover:translate-x-[2px] group-hover:translate-y-[-2px]"
                     >
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
@@ -74,7 +76,7 @@ export const Card = ({ props, className, onClick }) => {
                     <GithubIcon width={18} height={18} />
                     Repo
                 </LinkButton>
-                <LinkButton href={"#"} className="w-1/2">
+                <LinkButton href={props.prev ?? props.url} className="w-1/2" >
                     <LinkIcon width={18} height={18} />
                     Preview
                 </LinkButton>

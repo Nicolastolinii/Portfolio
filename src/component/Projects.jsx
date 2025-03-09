@@ -51,7 +51,7 @@ export const Projects = () => {
 
   // Function
   const getItemsPerPage = () => {
-    if (window.innerWidth < 768) { // Mobile
+    if (window.innerWidth < 960) { // Mobile
       return 2;
     } else { // Desktop
       return 6;
