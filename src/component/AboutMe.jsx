@@ -10,19 +10,19 @@ export const AboutMe = () => {
     const proyectos = [
         {
             title: "Gestion de tickets",
-            url: ""
+            url: "https://github.com/Nicolastolinii/Gestion-Tickets"
         },
         {
             title: "Tecnosapiens Backend",
-            url: ""
+            url: "https://github.com/Nicolastolinii/Tecnosapiens-Back"
         },
         {
             title: "Tecnosapiens Frontend",
-            url: ""
+            url: "https://github.com/Nicolastolinii/Tecnosapiens-Front"
         },
         {
             title: "UserNetSearcher",
-            url: ""
+            url: "https://github.com/Nicolastolinii/UserNetSearcher"
         }
     ]
     const items = [
