@@ -1,7 +1,6 @@
 import GithubIcon from "../icon/GithubIcon";
 import LinkButton from "./LinkButton";
 import LinkIcon from "../icon/LinkIcon";
-import svg from "../assets/placeholder.svg";
 import { Tags } from "./Tags";
 import { useState } from "react";
 

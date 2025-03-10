@@ -106,6 +106,7 @@ export const AboutMe = () => {
                     <div className="flex flex-col gap-1.5">
                         {proyectos.map((item, index) => (
                             <a
+                                target="_blank"
                                 className="flex items-center gap-2 group  transition-all duration-150"
                                 key={index}
                                 href={item.url}
